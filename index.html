@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">Mischa Melkert</div>
+        <div class="nav-right">
+            <a href="#about">About Me</a>
+            <a href="#projecten">Mijn Projecten</a>
+            <a href="#cv">CV</a>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Mischa Melkert</h1>
+                <h2>Student Communication & MultiMedia Design</h2>
+                <!-- socials -->
+                <div class="socials">
+                    <a href="mailto:mischa.melkert8@mail.com"><img src="img/email.png"></a>
+                    <a href="https://www.linkedin.com/in/mischa-melkert-30438624b/?originalSubdomain=nl"><img src="img/linkedin.png"></a>
+                    <a href="https://www.instagram.com/mischa.melkert/"><img src="img/instagram.png"></a>
+                </div>
+            </div>
+            <img src="img/Mischa.png" alt="Mischa Melkert">
+        </section>
+
+        <section class="about">
+            <div class="me">
+                <h2>About Me</h2>
+                <p>Hi! Mijn naam is Mischa Melkert, ik ben een 23-jarige derdejaars student Communication & Multimedia
+                    Design aan de Hogeschool van Amsterdam. Oorspronkelijk kom ik uit Anna Paulowna en ben nu woonachtig
+                    in Schagen. Tijdens mijn studie heb ik een sterke passie ontwikkeld voor front-end development,
+                    waarbij
+                    ik visueel ontwerp combineer met functionele, gebruiksvriendelijke interfaces. Ik streef ernaar om
+                    digitale ervaringen te creëren die zowel aantrekkelijk als intuïtief zijn. Daarnaast wil ik mezelf
+                    veel
+                    aanleren in front-end development om mijn vaardigheden verder te verbeteren en te verdiepen.</p>
+
+                <div class="vaardigheden" aria-label="vaardigheden">
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/htmllogo.png" alt="HTML icon" class="icon">
+                        <p>HTML</p>
+                    </div>
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/csslogo.png" alt="CSS icon" class="icon">
+                        <p>CSS</p>
+                    </div>
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/jslogo.png" alt="JavaScript icon" class="icon">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/photoshop.png" alt="Photoshop icon" class="icon">
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/illustrator.png" alt="Illustrator icon" class="icon">
+                        <p>Illustrator</p>
+                    </div>
+                    <div class="vaardigheid" aria-label="vaardigheid">
+                        <img src="img/figma.png" alt="Figma icon" class="icon">
+                        <p>Figma</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projects">
+            <h2>My Work</h2>
+
+            <section class="css" data-popup="cssPopup"><h3>CSS</h3>
+                <img src="img/css.png">
+            </section>
+            <section class="bt" data-popup="btPopup"><h3>Browser Tech</h3>
+                <img src="img/BT.png"></section>
+            <section class="hcd" data-popup="hcdPopup">HCD</section>
+            <section class="gyzs" data-popup="gyzsPopup">GYZS socials</section>
+            <section class="key" data-popup="hackPopup">Hackathon</section>
+        </section>
+
+        <!-- Popup overlays -->
+        <div class="backdrop" id="cssPopup">
+            <div class="popup-content">
+                <div class="content">
+                    <button class="close-btn">&times;</button>
+                    <h2>CSS — Een interactieve LP-speler in pure CSS</h2>
+                    <p>
+                        In dit project heb ik onderzocht hoe ver je kunt gaan met HTML en CSS door een interactieve
+                        LP-speler te ontwerpen en bouwen. Mijn doel was om een control panel te maken dat niet alleen
+                        functioneel is, maar ook een sterke visuele stijl heeft die aansluit bij het vintage karakter
+                        van een platenspeler.</p>
+
+                    <p>De LP-speler bevat verschillende interactieve elementen, zoals een aan/uitknop, een
+                        RPM-instelling (met custom gestylede radio buttons) en een draaiknop voor het volume. Voor de
+                        draaiende plaat heb ik gebruikgemaakt van moderne CSS-features zoals :has() en animaties met
+                        @keyframes. Ook de geluidsvisualisatie is geanimeerd en reageert op een slider die met behulp
+                        van calc() de hoogte van de sound bars aanstuurt.</p>
+
+                    <p>De draaiknop voor het volume is een van de meest visuele onderdelen. Hiervoor heb ik met behulp
+                        van clip-path, sin en cos een ribbelige structuur gegenereerd die een realistische, tastbare
+                        look geeft aan de knop. Een gradient en schaduw maken het effect compleet.</p>
+
+                    <p>In de laatste fase heb ik gefocust op structuur, responsiveness en afwerking. Door slim gebruik
+                        te maken van container queries en een custom font met animatie, komt het geheel pas echt tot
+                        leven wanneer de speler aanstaat. Ook de code is opgeschoond met betere nesting en minder
+                        onnodige wrappers.</p>
+
+                    <p>Dit project laat zien hoe krachtig CSS kan zijn, ook zonder zware frameworks of JavaScript. Het
+                        combineren van creatieve visuele oplossingen met technische nauwkeurigheid maakte dit een
+                        leerzaam en uitdagend proces.</p>
+
+                        <iframe src="https://mischamelk.github.io/WDD-CSS/"></iframe>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop" id="btPopup">
+            <div class="popup-content">
+                <div class="content">
+                    <button class="close-btn">&times;</button>
+                    <h2>Browser Tech - Responsive & accesible</h2>
+                    <p>
+                        Voor mijn WDD-BT-project ontwikkelde ik een erfbelasting-site met een focus op
+                        gebruiksvriendelijkheid en toegankelijkheid. Ik baseerde de huisstijl op die van NS en gebruikte
+                        CSS Grid voor een responsieve layout die zich aanpaste aan verschillende schermformaten.</p>
+
+                    <p>Een belangrijk onderdeel was het implementeren van dynamische formuliervelden die zich aanpassen
+                        op basis van gebruikersinvoer. Dit werd bereikt met de :has selector, en ik zorgde voor een
+                        fallback-optie voor niet-ondersteunde browsers. Ook werden iconen toegevoegd voor validatie en
+                        invalidatie van formuliervelden, wat de toegankelijkheid vergrootte, vooral voor mensen met
+                        visuele beperkingen.</p>
+
+                    <p>Daarnaast gebruikte ik local storage voor het opslaan van gebruikersgegevens, zodat voortgang
+                        bewaard bleef. Het project hielp me mijn vaardigheden in HTML, CSS en JavaScript te verbeteren,
+                        met een sterke focus op zowel technische uitvoering als gebruikerservaring.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop" id="hcdPopup">
+            <div class="popup-content">
+                <div class="content">
+                    <button class="close-btn">&times;</button>
+                    <h2>HCD</h2>
+                    <p>In dit project ontwikkelde ik een aangepast toetsenbord voor Eric, die door een fysieke beperking
+                        moeite heeft met het gebruik van een traditioneel toetsenbord. Het doel was om hem te helpen met
+                        typen in de trein, waar veel beweging is.
+
+                        Het prototype begon met een horizontaal swipen op het toetsenbord, maar na testfeedback werd
+                        besloten om verticaal te swipen, omdat dat beter werkte in een bewegende omgeving. Ik
+                        implementeerde een preview-div om de typinvoer goed zichtbaar te maken, en werkte de
+                        gevoeligheid van het toetsenbord bij om uitschieters te voorkomen.
+
+                        In de laatste week heb ik extra functies toegevoegd, zoals spatie-, nummer-, shift- en
+                        backspace-knoppen, en heb de gevoeligheid verlaagd van het toetsenbord.
+                        Het project gaf me waardevolle inzichten in het ontwerpen voor gebruikers met fysieke
+                        beperkingen en het belang van feedback tijdens het testen.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop" id="gyzsPopup">
+            <div class="popup-content">
+                <div class="content">
+                    <button class="close-btn">&times;</button>
+                    <h2>GYZS</h2>
+                    <p>Inhoud over GYZS socials...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop" id="hackPopup">
+            <div class="popup-content">
+                <div class="content">
+                    <button class="close-btn">&times;</button>
+                    <h2>Hackathon</h2>
+                    <p>Inhoud over Hackathon...</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section>
+            <!-- CV -->
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    
+    
+    
+    
+    
+</body>
+
+</html>
