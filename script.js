@@ -6,6 +6,8 @@ document.querySelectorAll('[data-popup]').forEach(section => {
       document.getElementById(popupId).classList.add('active');
     });
   });
+
+  
   
   document.querySelectorAll('.close-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -36,3 +38,4 @@ document.querySelectorAll('[data-popup]').forEach(section => {
         start: "top 70%",
         toggleActions: "play none none none"
       }});
+

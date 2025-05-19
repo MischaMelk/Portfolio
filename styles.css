@@ -64,6 +64,7 @@ nav {
     color: #000;
   }
 
+  
 
 h1{
     margin-top: 1em;
@@ -73,7 +74,7 @@ h1{
 
 h2{
     font-size: 2em;
-    font-weight: 400;
+    font-weight: 600;
     margin:0;
 }
 
@@ -153,10 +154,16 @@ p{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center; /* Zorgt voor centrering */
     padding: 20px;
     padding-bottom: 0;
   }
+  
+  .vaardigheden > * {
+    flex: 1 1 200px; /* Laat ze mooi wrappen rond ~3 per rij */
+    max-width: 250px; /* Max. breedte zodat het niet te groot wordt */
+  }
+  
   
   .vaardigheid {
     text-align: center;
@@ -215,11 +222,6 @@ p{
   }
 
 
-  .projects section img{
-    width: 100%;
-
-
-}
 
 
 .css { grid-area: 2 / 1 / 5 / 6;
@@ -239,6 +241,7 @@ background-color: #70c1b3; }
 
 .bt img{
     margin-top: 1em;
+    width: 100%;
 }
 
 
@@ -248,6 +251,19 @@ background-color: #70c1b3; }
     position: absolute;
     top:0;
     left: 0;
+    width: 100%;
+}
+
+.css img{
+    width: 100%;
+}
+
+.hack img{
+    width: 100%;
+}
+
+.hcd img{
+    width: 100%;
 }
 
 
@@ -377,10 +393,130 @@ background-color: #70c1b3; }
 
   }
 
+
+
+  .download-btn {
+    display: inline-block;
+    background-color: #0fa3b1; /* donkergrijs/blauw */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background-color: #12c7d7; /* iets lichtere tint */
+  }
+
   /* ************** */
   /* Responsiveness */
   /* ************** */
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
+
+
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .intro{
+        height: 25em;
+    }
+
+    .intro img{
+        height: 25em;
+    }
+
+    .hcd img{
+        width: 180%;
+        display: flex;
+        justify-self: center;
+    }
     
+    .bt img{
+        width: 120%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .popup-content{
+        margin: 5%;
+    }
   }
+
+  
+  @media screen and (max-width: 630px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+    
+      .nav-right {
+        display: flex;
+        justify-self: end;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      .nav-right a {
+        margin: 10px 0;
+      }
+
+.intro{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.intro img{
+    width: 100%;
+    height: 20em;
+}
+
+.intro-text{
+    width: 90%;
+}
+
+
+.socials{
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+
+.projects{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 2em repeat(4, 1fr);
+}
+
+.css { grid-area: 2 / 1 / 2 / 4; }
+.bt { grid-area: 3 / 1 / 3 / 4; }
+.hack { grid-area: 4 / 1 / 4 / 3; }
+.hcd { grid-area: 4 / 3 / 4 / 4; }
+.gyzs { grid-area: 5 / 1 / 5 / 4; }
+
+.projects h2{
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.projects section{
+    height: 15em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .projects section{
+        height: 10em;
+    }
+}
