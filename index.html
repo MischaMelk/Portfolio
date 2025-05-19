@@ -22,26 +22,28 @@
 
 
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="intro-text">
                 <h1>Mischa Melkert</h1>
                 <h2>Student Communication & MultiMedia Design</h2>
                 <!-- socials -->
                 <div class="socials">
                     <a href="mailto:mischa.melkert8@mail.com"><img src="img/email.png"></a>
-                    <a href="https://www.linkedin.com/in/mischa-melkert-30438624b/?originalSubdomain=nl"><img src="img/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/in/mischa-melkert-30438624b/?originalSubdomain=nl"><img
+                            src="img/linkedin.png"></a>
                     <a href="https://www.instagram.com/mischa.melkert/"><img src="img/instagram.png"></a>
                 </div>
             </div>
             <img src="img/Mischa.png" alt="Mischa Melkert">
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="me">
-                <h2>About Me</h2>
+                <h2>Over mij</h2>
                 <p>Hi! Mijn naam is Mischa Melkert, ik ben een 23-jarige derdejaars student Communication & Multimedia
                     Design aan de Hogeschool van Amsterdam. Oorspronkelijk kom ik uit Anna Paulowna en ben nu woonachtig
-                    in Schagen. Tijdens mijn studie heb ik een sterke passie ontwikkeld voor front-end development,
+                    in Schagen.</p>
+                <p> Tijdens mijn studie heb ik een sterke passie ontwikkeld voor front-end development,
                     waarbij
                     ik visueel ontwerp combineer met functionele, gebruiksvriendelijke interfaces. Ik streef ernaar om
                     digitale ervaringen te creëren die zowel aantrekkelijk als intuïtief zijn. Daarnaast wil ik mezelf
@@ -78,17 +80,32 @@
 
         </section>
 
-        <section class="projects">
-            <h2>My Work</h2>
+        <section class="projects" id="projecten">
+            <h2>Mijn werk</h2>
 
-            <section class="css" data-popup="cssPopup"><h3>CSS</h3>
+            <section class="css" data-popup="cssPopup">
+                <h3>CSS</h3>
                 <img src="img/css.png">
             </section>
-            <section class="bt" data-popup="btPopup"><h3>Browser Tech</h3>
-                <img src="img/BT.png"></section>
-            <section class="hcd" data-popup="hcdPopup">HCD</section>
-            <section class="gyzs" data-popup="gyzsPopup">GYZS socials</section>
-            <section class="key" data-popup="hackPopup">Hackathon</section>
+            <section class="bt" data-popup="btPopup">
+                <h3>Browser Tech</h3>
+                <img src="img/btmock.png">
+            </section>
+
+            <section class="hack" data-popup="hackPopup">
+                <h3>Hackathon</h3>
+                <img src="img/Hackathon.png">
+            </section>
+            <section class="gyzs" data-popup="gyzsPopup">
+                <h3>GYZS</h3>
+                <img src="img/gyzs.png">
+            </section>
+            <section class="hcd" data-popup="hcdPopup">
+                <h3>HCD</h3>
+                <img src="img/hcd.png">
+            </section>
+
+        </section>
         </section>
 
         <!-- Popup overlays -->
@@ -122,7 +139,7 @@
                         combineren van creatieve visuele oplossingen met technische nauwkeurigheid maakte dit een
                         leerzaam en uitdagend proces.</p>
 
-                        <iframe src="https://mischamelk.github.io/WDD-CSS/"></iframe>
+                    <iframe src="https://mischamelk.github.io/WDD-CSS/"></iframe>
 
                 </div>
             </div>
@@ -149,6 +166,7 @@
                         met een sterke focus op zowel technische uitvoering als gebruikerservaring.
 
                     </p>
+                    <iframe src="https://mischamelk.github.io/WDD-BT/"></iframe>
 
                 </div>
             </div>
@@ -158,20 +176,22 @@
             <div class="popup-content">
                 <div class="content">
                     <button class="close-btn">&times;</button>
-                    <h2>HCD</h2>
+                    <h2>Human Centered Design</h2>
                     <p>In dit project ontwikkelde ik een aangepast toetsenbord voor Eric, die door een fysieke beperking
                         moeite heeft met het gebruik van een traditioneel toetsenbord. Het doel was om hem te helpen met
-                        typen in de trein, waar veel beweging is.
+                        typen in de trein, waar veel beweging is.</p>
 
-                        Het prototype begon met een horizontaal swipen op het toetsenbord, maar na testfeedback werd
+                    <p> Het prototype begon met een horizontaal swipen op het toetsenbord, maar na testfeedback werd
                         besloten om verticaal te swipen, omdat dat beter werkte in een bewegende omgeving. Ik
                         implementeerde een preview-div om de typinvoer goed zichtbaar te maken, en werkte de
-                        gevoeligheid van het toetsenbord bij om uitschieters te voorkomen.
+                        gevoeligheid van het toetsenbord bij om uitschieters te voorkomen.</p>
 
-                        In de laatste week heb ik extra functies toegevoegd, zoals spatie-, nummer-, shift- en
+                    <p>In de laatste week heb ik extra functies toegevoegd, zoals spatie-, nummer-, shift- en
                         backspace-knoppen, en heb de gevoeligheid verlaagd van het toetsenbord.
                         Het project gaf me waardevolle inzichten in het ontwerpen voor gebruikers met fysieke
                         beperkingen en het belang van feedback tijdens het testen.</p>
+
+                    <iframe class="hcdFrame" src="https://mischamelk.github.io/WDD-HCD/"></iframe>
 
                 </div>
             </div>
@@ -181,8 +201,22 @@
             <div class="popup-content">
                 <div class="content">
                     <button class="close-btn">&times;</button>
-                    <h2>GYZS</h2>
-                    <p>Inhoud over GYZS socials...</p>
+                    <h2>GYZS – Content Marketeer</h2>
+                    <p>
+                        Bij GYZS heb ik een tijdje gewerkt als content marketeer. Hier mocht ik me bezighouden met het
+                        maken van social media posts, het bedenken van de layouts, en het schrijven en opmaken van
+                        nieuwsbrieven.</p>
+
+                    <p>Wat ik vooral leuk vond, was dat ik veel vrijheid kreeg om creatief te zijn, maar ook moest
+                        nadenken over wat goed werkt voor de doelgroep. Het gaf me inzicht in hoe social media-posts en
+                        nieuwsbrieven een rol spelen in het vergroten van bereik en interactie met de doelgroep.
+                        Ik heb hier niet alleen mijn designskills verbeterd, maar ook geleerd om meer strategisch te
+                        kijken naar content en communicatie.</p>
+                    <div class="contentImg">
+                        <img src="img/Gyzs-insta.jpg">
+                        <img src="img/gyzs-banner.jpg">
+                        <img src="img/gyzs-banner2.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -191,8 +225,22 @@
             <div class="popup-content">
                 <div class="content">
                     <button class="close-btn">&times;</button>
-                    <h2>Hackathon</h2>
-                    <p>Inhoud over Hackathon...</p>
+                    <h2>Hackathon - Ode aan vrouwen in tech</h2>
+                    <p>Tijdens een intensieve hackathon hebben we met ons team een website ontwikkeld als lofuiting aan
+                        50 inspirerende vrouwen uit de techwereld. De gegevens haalden we realtime uit een externe API,
+                        waardoor we actuele en dynamische informatie konden verwerken.</p>
+
+                    <p>We kozen voor een speelse insteek: gebruikers konden via een Mario Kart-style selector een vrouw
+                        kiezen. Na selectie werd ze gepresenteerd in de vorm van een FIFA-kaart, compleet met naam,
+                        specialiteiten en statistieken. Deze unieke presentatie zorgde voor een interactieve ervaring
+                        waarin fun en bewondering samenkwamen.</p>
+
+                    <p>Ik was verantwoordelijk voor het ontwerp van de FIFA-kaart en heb mezelf hierbij uitgedaagd om
+                        met 3D-effecten in CSS te werken. Het gaf me de kans om diepte en levendigheid aan het ontwerp
+                        toe te voegen. Daarnaast ontdekte ik een nieuw soort HTML select-component die ik volledig
+                        naar eigen wens kon stijlen — iets wat me eerder vaak beperkt voelde, maar nu perfect in het
+                        visuele totaalplaatje paste.</p>
+                    <iframe src="https://tomvand298.github.io/Hackaton/"></iframe>
 
                 </div>
             </div>
@@ -201,8 +249,10 @@
 
 
 
-        <section>
+        <section class="cv" id="cv">
+
             <!-- CV -->
+            <h2>Mijn CV</h2>
         </section>
 
 
@@ -216,11 +266,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 
-    
-    
-    
-    
-    
 </body>
 
 </html>

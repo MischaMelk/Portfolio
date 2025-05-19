@@ -28,11 +28,11 @@ document.querySelectorAll('[data-popup]').forEach(section => {
 
   gsap.from('[aria-label="vaardigheden"] div ',{
 	duration:1,
-	x: 1000,
-	stagger:.3,
+    x: window.innerWidth,
+    stagger:.3,
     ease: "power4.out",
     scrollTrigger: {
         trigger: '[aria-label="vaardigheden"]',
-        start: "top 70%", // wanneer het top van .vaardigheden 80% van het scherm bereikt
-        toggleActions: "play none none none" // alleen afspelen, geen reset
+        start: "top 70%",
+        toggleActions: "play none none none"
       }});
