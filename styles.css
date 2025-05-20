@@ -363,7 +363,8 @@ background-color: #70c1b3; }
     padding: 5%;
     width: 90%;
     background: 
-    radial-gradient(circle at -10% 90%, var(--prime-color) 0%, transparent 40%);
+    radial-gradient(circle at 100% -80%, var(--prime-color) 0%, transparent 80%),
+    radial-gradient(circle at -30% 120%, var(--second-color) 0%, white 40%);
     overflow-x: hidden;
 }
 
